@@ -2,6 +2,7 @@
   "name": "my-sudoku",
   "version": "0.1.0",
   "private": true,
+  "homepage":"https://lilyliu0719.github.io/109-1-web-deploy-tutorial/," 
   "dependencies": {
     "-": "^0.0.1",
     "@material-ui/core": "^4.11.0",
@@ -20,7 +21,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build"
+    "build": "react-scripts build", 
+    "predeploy": "yarn build", 
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
